@@ -1,14 +1,26 @@
-title: Project title in sentence case
+title: Welcome to Antarctica
 hero_image: images/banner.png
-description: A short description of the project
+description: Use HTML, CSS, and JavaScript to make a great website
+version: 5
+copyedit: false
+last_tested: '2026-03-16'
 listed: false
 pdf: false
 steps:
-  - title: What you will make
-  - title: Step title
-    completion:
-      - engaged      
-  - title: Challenge
-    challenge: true
-    completion:
-      - external
+- title: Step 1
+- title: Step 2
+  completion:
+  - engaged
+- title: Step 3
+- title: Step 4
+- title: Step 5
+- title: Step 6
+- title: Step 7
+- title: Step 8
+- title: Step 9
+- title: Step 10
+- title: Step 11
+- title: Step 12
+  completion:
+  - internal
+  - external

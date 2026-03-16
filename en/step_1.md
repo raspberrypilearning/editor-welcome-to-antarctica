@@ -1,45 +1,52 @@
-## What you will make
-OR
-## What you will do - change meta if you use this
+<h2 class="c-project-heading--task">You will make</h2>
 
-A brief description - one or two sentences. 
+--- task ---
 
---- print-only ---
+Create a responsive website about Antarctica with multiple pages, images, and interactive fact cards.
 
-![ALT TEXT](images/IMAGE.png)
+--- /task ---
 
---- /print-only ---
-
---- no-print ---
-
-[Editor embed](https://editor.raspberrypi.org/en/embed/viewer/project-slug)
-
---- /no-print ---
-
---- no-print ---
-
-Video embed
-
-<video width="640" height="360" controls>
-<source src="images/videoname.mp4" type="video/mp4">
-</video>
-
-Youtube embed 
-<html>
-<div style="position: relative; overflow: hidden; padding-top: 56.25%;">
-<iframe style="position: absolute; top: 0; left: 0; right: 0; width: 100%; height: 100%; border: none;" src="https://www.youtube.com/embed/XXXXXXXXX?rel=0&cc_load_policy=1" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
-</iframe>
-</div><br>
-</html>
-
-Scratch embed
-<div class="scratch-preview">
- <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/XXXXXXXXX/?autostart=false" frameborder="0"></iframe>
+<div class="c-project-output">
+  <iframe src="https://editor.raspberrypi.org/en/embed/viewer/editor-welcome-to-antarctica-complete" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  </iframe>
 </div>
 
---- /no-print ---
+--- task ---
 
-### You will need:
-- a
-- b
-- c
+Open `index.html` and create a navigation bar so visitors can move between pages.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 11
+line_highlights: 12-21
+---
+    <header>
+      <nav>
+        <div class="nav-items"> 
+          <a class="active" href="index.html">Home</a>
+          <a href="wildlife.html">Wildlife</a>
+          <a href="climate.html">Climate</a>
+        </div>
+        <div class="burger">
+          <span id="openHam">&#9776;</span>
+          <span id="closeHam">&#x2716;</span>
+        </div>
+      </nav>
+      <div class="hero-image home"></div>
+    </header>
+--- /code ---
+
+</div>
+
+--- /task ---
+
+--- task ---
+
+**Test:** Click the links in your navbar to check you can open **Home**, **Wildlife**, and **Climate**.
+
+--- /task ---
