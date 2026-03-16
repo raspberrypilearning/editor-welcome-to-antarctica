@@ -1,3 +1,4 @@
 name: 'Welcome to Antarctica - Starter'
 identifier: 'editor-welcome-to-antarctica-starter'
 type: 'html'
+build: true
