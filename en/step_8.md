@@ -1,37 +1,39 @@
-<h2 class="c-project-heading--task">Make the menu work on small screens</h2>
+<h2 class="c-project-heading--task">Add hover animations</h2>
 
-Use JavaScript so the burger menu can show and hide the navigation links.
+Make your facts appear when you hover over a card.
 
 --- task ---
 
-Open `responsive-navbar.js` and add click events for opening and closing the menu.
+Open `style.css` and hide fact text until the user hovers.
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: javascript
-filename: responsive-navbar.js
+language: css
+filename: style.css
 line_numbers: true
-line_number_start: 1
-line_highlights: 15-16
+line_number_start: 110
+line_highlights: 120-121, 125-127
 ---
-let openHam = document.querySelector('#openHam');
-let closeHam = document.querySelector('#closeHam');
-let navigationItems = document.querySelector('.nav-items');
-
-const burgerEvent = (navigation, close, open) => { 
-    if (navigation == "none"){
-        navigationItems.style.removeProperty("display");
-    } else {
-        navigationItems.style.display = navigation;
-    }
-    closeHam.style.display = close;
-    openHam.style.display = open;
+.fact {
+  font-size: 100%;
+  color: var(--fact-text-colour);
+  background-color: var(--fact-background);
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 0 5px 0 5px;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
 }
 
-openHam.addEventListener('click', () => burgerEvent("flex", "block", "none"));
-closeHam.addEventListener('click', () => burgerEvent("none", "none", "block"));
+/* Fact hover */
+.fact:hover {
+  opacity: 1;
+}
 --- /code ---
 
 </div>
@@ -40,6 +42,6 @@ closeHam.addEventListener('click', () => burgerEvent("none", "none", "block"));
 
 --- task ---
 
-**Test:** Make your browser window narrow and click the burger icon — the links should appear and disappear.
+**Test:** Hover over a card and check the fact text fades in.
 
 --- /task ---

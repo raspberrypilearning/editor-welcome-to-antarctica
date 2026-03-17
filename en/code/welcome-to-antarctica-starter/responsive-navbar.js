@@ -11,6 +11,3 @@ const burgerEvent = (navigation, close, open) => {
     closeHam.style.display = close;
     openHam.style.display = open;
 }
-
-openHam.addEventListener('click', () => burgerEvent("flex", "block", "none"));
-closeHam.addEventListener('click', () => burgerEvent("none", "none", "block"));

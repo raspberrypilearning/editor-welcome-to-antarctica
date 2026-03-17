@@ -1,42 +1,49 @@
-<h2 class="c-project-heading--task">Create a wildlife grid</h2>
+<h2 class="c-project-heading--task">Arrange facts with grids</h2>
+
+Turn your facts into image cards arranged in a grid.
 
 --- task ---
 
-Use a different grid layout to show wildlife facts in a new way.
-
---- /task ---
-
---- task ---
-
-Open `wildlife.html` and set up the wildlife fact cards.
+Open `index.html` and add classes so your fact cards can be laid out and styled.
 
 <div class="c-project-code">
 
 --- code ---
 ---
 language: html
-filename: wildlife.html
+filename: index.html
 line_numbers: true
-line_number_start: 24
-line_highlights: 28-39
+line_number_start: 25
+line_highlights: 28-46
 ---
-    <div class="hero-image wildlife"></div>
     <main>
       <section>
-        <h1>
-          Hover on the cards below to learn about the animals in Antarctica
-        </h1>
-        <div class="fact-holder-wildlife">
-          <span class="fact-card penguins">
+        <h1>Welcome to Antarctica!</h1>
+        <h1>Hover on the cards below to read some facts about Antarctica</h1>
+        <div class="fact-holder">
+          <span class="fact-card sun">
             <p class="fact">
-              Emperor penguins live in colonies on sea ice. Sea ice is frozen sea water and it forms a fringe around the Antarctic continent.
+              Antarctica is the coldest continent, but it is also the driest! On average, there is just 200mm (8 inches) of precipitation a year, the majority of it along the coast.
             </p>
           </span>
-          <span class="fact-card krill">
+          <span class="fact-card discovery">
             <p class="fact">
-              Krill is eaten by many organisms, such as penguins, birds, and even the ginormous elephant seal!
+              The continent is thought to have been discovered relatively late in human history. In 1820, Fabian Gottlieb von Bellingshausen and Mikhail Lazarev lead a Russian expedition to prove the exsistence of Antarctica and were probably the first to see the ice shelves. 
             </p>
           </span>
+          <span class="fact-card explorers">
+            <p class="fact">
+              Who first set foot on the continent? The first documented and confirmed landing was a crew led by Norwegian Leonard Kristensen at Cape Adare.
+            </p>
+          </span>
+          <span class="fact-card ownership">
+            <p class="fact">
+              Antarctica is governed by the Antarctic Treaty. The Treaty now has 56 supporting nations, 29 of which are considered “Consultative Parties” and are actively involved in decision-making.
+            </p>
+          </span>
+        </div>
+      </section>
+    </main>
 --- /code ---
 
 </div>
@@ -45,6 +52,6 @@ line_highlights: 28-39
 
 --- task ---
 
-**Test:** Run the Wildlife page and check you can hover the cards to reveal the facts.
+**Test:** Run your homepage code and check that you can see four fact 'cards' arranged in a grid.
 
 --- /task ---

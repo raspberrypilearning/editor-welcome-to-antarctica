@@ -1,47 +1,49 @@
-<h2 class="c-project-heading--task">Add responsive CSS</h2>
+<h2 class="c-project-heading--task">Create a wildlife grid</h2>
 
-Show the burger menu and stack the links when the screen is small.
+Use a different grid layout to show wildlife facts in a new way.
 
 --- task ---
 
-Open `style.css` and add a media query to change the navbar layout on small screens.
+Open `wildlife.html` and set up the wildlife fact cards.
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: css
-filename: style.css
+language: html
+filename: wildlife.html
 line_numbers: true
-line_number_start: 211
-line_highlights: 212-235
+line_number_start: 24
+line_highlights: 27-48
 ---
-/* Media query */
-@media screen and (max-width: 768px) {
-  
-  .burger {
-    display: flex;
-    cursor: pointer;
-  }
-
-  .burger #closeHam {
-    display: none;
-  }
-
-  .nav-items {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    top: 58px;
-    background-color: var(--nav-colour);
-    width: 100%;
-    height: calc(100vh - 58px);
-    padding-top: 60px;
-    gap: 10vh;
-  }
-}
+    <div class="hero-image wildlife"></div>
+    <main>
+      <section>
+        <h1>
+          Hover on the cards below to learn about the animals in Antarctica
+        </h1>
+        <div class="fact-holder-wildlife">
+          <span class="fact-card penguins">
+            <p class="fact">
+              Emperor penguins live in colonies on sea ice. Sea ice is frozen sea water and it forms a fringe around the Antarctic continent.
+            </p>
+          </span>
+          <span class="fact-card krill">
+            <p class="fact">
+              Krill is eaten by many organisms, such as penguins, birds, and even the ginormous elephant seal!
+            </p>
+          </span>
+          <span class="fact-card seals">
+            <p class="fact">
+              Seals have thick beautiful fur coats and blubber, making them supremely adapted to the cold.
+            </p>
+          </span>
+          <span class="fact-card orcas">
+            <p class="fact">
+              At the top of the food chain, there are Orcas, often known as Killer Whales. These are the biggest carnivores on Earth, reaching almost 10m in length!
+            </p>
+          </span>
+          
 --- /code ---
 
 </div>
@@ -50,6 +52,37 @@ line_highlights: 212-235
 
 --- task ---
 
-**Test:** Shrink your browser and check the burger icon appears (and the links don’t take up space until you open the menu).
+Open `style.css`.
+
+Add the `fact-holder-wildlife` selector to the `style.css` file.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 104
+line_highlights: 105-110
+---
+
+/* Fact holder - wildlife */
+.fact-holder-wildlife {
+  display: grid;
+  height: 70vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
+}
+
+--- /code ---
+
+</div>
+
+--- /task ---
+
+--- task ---
+
+**Test:** Run the Wildlife page and check you can hover the cards to reveal the facts.
 
 --- /task ---
