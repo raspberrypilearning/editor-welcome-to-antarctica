@@ -1,10 +1,10 @@
-<h2 class="c-project-heading--task">Arrange facts with grids</h2>
+<h2 class="c-project-heading--task">Add hero images</h2>
 
-Turn your facts into image cards arranged in a grid.
+Add a big 'hero image' at the top of a page to show what it’s about.
 
 --- task ---
 
-Open `index.html` and add classes so your fact cards can be laid out and styled.
+Add a hero image `<div>` underneath the header on each page.
 
 <div class="c-project-code">
 
@@ -13,37 +13,39 @@ Open `index.html` and add classes so your fact cards can be laid out and styled.
 language: html
 filename: index.html
 line_numbers: true
-line_number_start: 25
-line_highlights: 29-48
+line_number_start: 23
+line_highlights: 24
 ---
-    <main>
-      <section>
-        <h1>Welcome to Antarctica!</h1>
-        <h1>Hover on the cards below to read some facts about Antarctica</h1>
-        <div class="fact-holder">
-          <span class="fact-card sun">
-            <p class="fact">
-              Antarctica is the coldest continent, but it is also the driest! On average, there is just 200mm (8 inches) of precipitation a year, the majority of it along the coast.
-            </p>
-          </span>
-          <span class="fact-card discovery">
-            <p class="fact">
-              The continent is thought to have been discovered relatively late in human history. In 1820, Fabian Gottlieb von Bellingshausen and Mikhail Lazarev lead a Russian expedition to prove the exsistence of Antarctica and were probably the first to see the ice shelves. 
-            </p>
-          </span>
-          <span class="fact-card explorers">
-            <p class="fact">
-              Who first set foot on the continent? The first documented and confirmed landing was a crew led by Norwegian Leonard Kristensen at Cape Adare.
-            </p>
-          </span>
-          <span class="fact-card ownership">
-            <p class="fact">
-              Antarctica is governed by the Antarctic Treaty. The Treaty now has 56 supporting nations, 29 of which are considered “Consultative Parties” and are actively involved in decision-making.
-            </p>
-          </span>
-        </div>
-      </section>
-    </main>
+  </header>
+  <div class="hero-image"></div>
+  <main>
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+In `style.css`, add a new selector for the `hero-image` class.
+
+Instead of adding an `<img>` element to the HTML, you can use the CSS `background-image` property to add your image. 
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 73
+line_highlights: 74-79
+---
+
+/* Hero image - homepage */
+.hero-image {
+  min-height: 50vh; /* 50% of the visible area of the page */
+  background-image: url('antarctic-lights.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
 --- /code ---
 
 </div>
@@ -52,6 +54,6 @@ line_highlights: 29-48
 
 --- task ---
 
-**Test:** Run the Home page and check you can see four fact “cards” arranged in a grid.
+**Test:** Check a large image appears near the top of the page.
 
 --- /task ---

@@ -1,28 +1,37 @@
-<h2 class="c-project-heading--task">Upgrade and next steps</h2>
+<h2 class="c-project-heading--task">Make the menu work on small screens</h2>
 
-Personalise your website by changing one detail, then decide what to build next.
+Use JavaScript so the burger menu can show and hide the navigation links.
 
 --- task ---
 
-Try a quick upgrade: change the Home page hero image by switching the extra class on the hero `<div>`.
+Open `responsive-navbar.js` and add click events for opening and closing the menu.
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: html
-filename: index.html
+language: javascript
+filename: responsive-navbar.js
 line_numbers: true
-line_number_start: 19
-line_highlights: 23
+line_number_start: 1
+line_highlights: 15-16
 ---
-        <div class="burger">
-          <span id="openHam">&#9776;</span>
-          <span id="closeHam">&#x2716;</span>
-        </div>
-      </nav>
-      <div class="hero-image home"></div>
-    </header>
+let openHam = document.querySelector('#openHam');
+let closeHam = document.querySelector('#closeHam');
+let navigationItems = document.querySelector('.nav-items');
+
+const burgerEvent = (navigation, close, open) => { 
+    if (navigation == "none"){
+        navigationItems.style.removeProperty("display");
+    } else {
+        navigationItems.style.display = navigation;
+    }
+    closeHam.style.display = close;
+    openHam.style.display = open;
+}
+
+openHam.addEventListener('click', () => burgerEvent("flex", "block", "none"));
+closeHam.addEventListener('click', () => burgerEvent("none", "none", "block"));
 --- /code ---
 
 </div>
@@ -31,6 +40,79 @@ line_highlights: 23
 
 --- task ---
 
-**Test:** Run the Home page and check the hero image changes when you change the class (for example `home`, `wildlife`, or `climate`).
+Also add the **JavaScript** file to each page. 
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: html
+filename: wildlife.html
+line_numbers: true
+line_number_start: 51
+line_highlights: 52
+---
+    </main>
+    <script type="text/javascript" src="responsive-navbar.js"></script>
+  </body>
+</html>
+
+--- /code ---
+
+</div>
+
+--- /task ---
+
+--- task ---
+
+Show the burger menu and stack the links when the screen is small.
+
+Open `style.css` and add a media query to change the navbar layout on small screens.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 201
+line_highlights:
+---
+/* Media query */
+@media screen and (max-width: 768px) {
+  
+  .burger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .burger #closeHam {
+    display: none;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 58px;
+    background-color: var(--nav-colour);
+    width: 100%;
+    height: calc(100vh - 58px);
+    padding-top: 60px;
+    gap: 10vh;
+  }
+}
+--- /code ---
+
+</div>
+
+--- /task ---
+
+--- task ---
+
+**Test:** Make your browser window narrow and click the burger icon — the links should appear and disappear.
 
 --- /task ---
