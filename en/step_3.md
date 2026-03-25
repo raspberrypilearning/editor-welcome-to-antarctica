@@ -12,7 +12,7 @@ language: html
 filename: index.html
 line_numbers: true
 line_number_start: 11
-line_highlights: 12-22
+line_highlights: 12-21
 ---
     <header>
       <nav>
@@ -26,7 +26,6 @@ line_highlights: 12-22
           <span id="closeHam">&#x2716;</span>
         </div>
       </nav>
-      <div class="hero-image home"></div>
     </header>
 --- /code ---
 
@@ -38,7 +37,9 @@ line_highlights: 12-22
 
 Do the same for the other pages: `wildlife.html` and `climate.html`.
 
-Add the `active` class attribute to the page you are working on.
+Add the `active` class attribute to the link for the page you are working on.
+
+The `active` link will not look different yet. You will style it in the next step.
 
 --- /task ---
 
@@ -47,3 +48,9 @@ Add the `active` class attribute to the page you are working on.
 **Test:** Click Run, then click the links in your navbar to check you can open **Home**, **Wildlife**, and **Climate**.
 
 --- /task ---
+
+<div class="c-project-output">
+
+![output screenshot](images/step3.png)
+
+</div>

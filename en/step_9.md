@@ -43,6 +43,9 @@ line_highlights: 27-48
               At the top of the food chain, there are Orcas, often known as Killer Whales. These are the biggest carnivores on Earth, reaching almost 10m in length!
             </p>
           </span>
+        </div>
+      </section>
+    </main>
           
 --- /code ---
 
@@ -54,7 +57,7 @@ line_highlights: 27-48
 
 Open `style.css`.
 
-Add the `fact-holder-wildlife` selector to the `style.css` file.
+Add the `fact-holder-wildlife` selector.
 
 <div class="c-project-code">
 
@@ -63,8 +66,8 @@ Add the `fact-holder-wildlife` selector to the `style.css` file.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 104
-line_highlights: 105-110
+line_number_start: 108
+line_highlights: 109-114
 ---
 
 /* Fact holder - wildlife */
@@ -72,7 +75,7 @@ line_highlights: 105-110
   display: grid;
   height: 70vh;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 --- /code ---
@@ -83,6 +86,12 @@ line_highlights: 105-110
 
 --- task ---
 
-**Test:** Run the Wildlife page and check you can hover the cards to reveal the facts.
+**Test:** Run the Wildlife page and check you can hover over the cards to reveal the facts.
 
 --- /task ---
+
+<div class="c-project-output">
+
+![output screenshot](images/step9.png)
+
+</div>

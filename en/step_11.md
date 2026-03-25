@@ -49,8 +49,8 @@ Also add the **JavaScript** file to each page.
 language: html
 filename: wildlife.html
 line_numbers: true
-line_number_start: 51
-line_highlights: 52
+line_number_start: 53
+line_highlights: 54
 ---
     </main>
     <script type="text/javascript" src="responsive-navbar.js"></script>
@@ -76,8 +76,8 @@ Open `style.css` and add a media query to change the navbar layout on small scre
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 201
-line_highlights:
+line_number_start: 211
+line_highlights: 212-236
 ---
 /* Media query */
 @media screen and (max-width: 768px) {
@@ -113,6 +113,6 @@ line_highlights:
 
 --- task ---
 
-**Test:** Make your browser window narrow and click the burger icon — the links should appear and disappear.
+**Test:** Make your browser window narrow and click the burger icon. The links should appear and disappear.
 
 --- /task ---
