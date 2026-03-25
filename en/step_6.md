@@ -4,7 +4,7 @@ Each page should have its own hero image that represents its content!
 
 --- task ---
 
-Inside `style.css` add a new class selector for wildlife.
+Inside `style.css`, find the `/* Hero image - wildlife */` comment and add a new class selector for wildlife underneath it.
 
 You can set a new `background-image` property, which will overwrite the one set in the `hero-image` class.
 
@@ -15,17 +15,17 @@ You can set a new `background-image` property, which will overwrite the one set 
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 86
-line_highlights: 87-89
+line_number_start: 90
+line_highlights: 91-93
 ---
 /* Hero image - wildlife */
 .wildlife {
   background-image: url('antarctic-penguins.jpg');
 }
 
-</div>
-
 --- /code ---
+
+</div>
 
 --- /task ---
 
@@ -41,11 +41,11 @@ language: html
 filename: wildlife.html
 line_numbers: true
 line_number_start: 23
-line_highlights: 24
+line_highlights: 25
 ---
-  </header>
-  <div class="hero-image wildlife"></div>
-  <main>
+    </header>
+    <div class="hero-image wildlife"></div>
+    <main>
 
 --- /code ---
 
@@ -55,7 +55,7 @@ line_highlights: 24
 
 --- task ---
 
-Add a new class selector for climate.
+Find the `/* Hero image - climate */` comment and add a new class selector for climate underneath it.
 
 <div class="c-project-code">
 
@@ -64,17 +64,17 @@ Add a new class selector for climate.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 86
-line_highlights: 87-89
+line_number_start: 95
+line_highlights: 96-98
 ---
 /* Hero image - climate */
 .climate {
   background-image: url('antarctic-daytime.jpg');
 }
 
-</div>
-
 --- /code ---
+
+</div>
 
 --- /task ---
 
@@ -89,7 +89,7 @@ Now apply the new `climate` class as an **addition** to the `hero-image` class i
 language: html
 filename: climate.html
 line_numbers: true
-line_number_start: 23
+line_number_start: 22
 line_highlights: 24
 ---
 
@@ -105,6 +105,12 @@ line_highlights: 24
 
 --- task ---
 
-**Test:** Check a large image appears near the top each page.
+**Test:** Check a large image appears near the top of each page.
 
 --- /task ---
+
+<div class="c-project-output">
+
+![output screenshot](images/step6.png)
+
+</div>

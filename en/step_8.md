@@ -13,8 +13,8 @@ Open `style.css` and hide fact text until the user hovers.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 110
-line_highlights: 120-121, 125-127
+line_number_start: 120
+line_highlights: 130-131, 135-137
 ---
 .fact {
   font-size: 100%;
@@ -45,3 +45,9 @@ line_highlights: 120-121, 125-127
 **Test:** Hover over a card and check the fact text fades in.
 
 --- /task ---
+
+<div class="c-project-output">
+
+![output screenshot](images/step8.png)
+
+</div>

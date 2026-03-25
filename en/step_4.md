@@ -4,7 +4,9 @@ Use CSS to turn your links into a clear navigation bar.
 
 --- task ---
 
-Open `style.css` and add styling for the navbar links.
+Open `style.css` and find the `/* Nav bar */` comment.
+
+Add the navbar styles underneath that comment.
 
 <div class="c-project-code">
 
@@ -13,8 +15,8 @@ Open `style.css` and add styling for the navbar links.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 35
-line_highlights: 43, 47-50, 53-57, 60-62, 65-68, 71-77
+line_number_start: 37
+line_highlights: 45, 50-53, 56-60, 63-65, 68-71, 74-80
 ---
 /* Nav bar */
 nav {
@@ -67,6 +69,12 @@ nav {
 
 --- task ---
 
-**Test:** Run your project again and check the navbar is styled and the current page link looks “active”.
+**Test:** Run your project again and check the navbar is styled and the current page link now looks “active”.
 
 --- /task ---
+
+<div class="c-project-output">
+
+![output screenshot](images/step4.png)
+
+</div>

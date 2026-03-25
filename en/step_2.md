@@ -4,7 +4,9 @@
 
 Import a Google font to style the fonts on your pages.
 
-Open `defaults.css`
+Open `defaults.css`.
+
+You can find it in the file list next to `style.css` and your HTML files.
 
 Place this `@import` statement at the top of your file.
 
@@ -13,7 +15,7 @@ Place this `@import` statement at the top of your file.
 --- code ---
 ---
 language: css
-filename: default.css
+filename: defaults.css
 line_numbers: true
 line_number_start: 1
 line_highlights: 2
@@ -37,7 +39,7 @@ Create a new variable inside the `:root` selector, called `--body-font` and set 
 --- code ---
 ---
 language: css
-filename: default.css
+filename: defaults.css
 line_numbers: true
 line_number_start: 4
 line_highlights: 7
@@ -65,8 +67,8 @@ Add the `font-family` property inside the body selector and set it to the new `-
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 4
-line_highlights: 14
+line_number_start: 1
+line_highlights: 11
 ---
 body {
   background-color: var(--body-background);
@@ -91,3 +93,9 @@ body {
 **Test:** Click Run to see your new font!
 
 --- /task ---
+
+<div class="c-project-output">
+
+![output screenshot](images/step2.png)
+
+</div>

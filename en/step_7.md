@@ -4,7 +4,9 @@ Turn your facts into image cards arranged in a grid.
 
 --- task ---
 
-Open `index.html` and add classes so your fact cards can be laid out and styled.
+Open `index.html` and update the first `<section>`.
+
+Keep the existing `Welcome to Antarctica!` heading, then add the second heading and the `fact-holder` `<div>` inside the same section.
 
 <div class="c-project-code">
 
@@ -14,7 +16,7 @@ language: html
 filename: index.html
 line_numbers: true
 line_number_start: 25
-line_highlights: 28-46
+line_highlights: 28-50
 ---
     <main>
       <section>
@@ -52,6 +54,41 @@ line_highlights: 28-46
 
 --- task ---
 
-**Test:** Run your homepage code and check that you can see four fact 'cards' arranged in a grid.
+Open `style.css` and find the `/* Fact card */` comment.
+
+Add this CSS so each fact card fills its grid area and shows its background image properly.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 111
+line_highlights: 112-117
+---
+/* Fact card */
+.fact-card {
+  width: 100%;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+}
+--- /code ---
+
+</div>
 
 --- /task ---
+
+--- task ---
+
+**Test:** Run your homepage code and check that you can see four fact cards arranged in a grid.
+
+--- /task ---
+
+<div class="c-project-output">
+
+![output screenshot](images/step7.png)
+
+</div>
