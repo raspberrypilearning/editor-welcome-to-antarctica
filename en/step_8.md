@@ -1,10 +1,62 @@
-<h2 class="c-project-heading--task">Add hover animations</h2>
+<h2 class="c-project-heading--task">Create a wildlife grid</h2>
 
-Make your facts appear when you hover over a card.
+Use a different grid layout to show wildlife facts in a new way.
 
---- task ---
+### Step 1
 
-Open `style.css` and hide fact text until the user hovers.
+Open `wildlife.html` and set up the wildlife fact cards.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: html
+filename: wildlife.html
+line_numbers: true
+line_number_start: 24
+line_highlights: 27-48
+---
+    <div class="hero-image wildlife"></div>
+    <main>
+      <section>
+        <h1>
+          Hover on the cards below to learn about the animals in Antarctica
+        </h1>
+        <div class="fact-holder-wildlife">
+          <span class="fact-card penguins">
+            <p class="fact">
+              Emperor penguins live in colonies on sea ice. Sea ice is frozen sea water and it forms a fringe around the Antarctic continent.
+            </p>
+          </span>
+          <span class="fact-card krill">
+            <p class="fact">
+              Krill is eaten by many organisms, such as penguins, birds, and even the ginormous elephant seal!
+            </p>
+          </span>
+          <span class="fact-card seals">
+            <p class="fact">
+              Seals have thick beautiful fur coats and blubber, making them supremely adapted to the cold.
+            </p>
+          </span>
+          <span class="fact-card orcas">
+            <p class="fact">
+              At the top of the food chain, there are Orcas, often known as Killer Whales. These are the biggest carnivores on Earth, reaching almost 10m in length!
+            </p>
+          </span>
+        </div>
+      </section>
+    </main>
+          
+--- /code ---
+
+</div>
+
+
+### Step 2
+
+Open `style.css`.
+
+Add the `fact-holder-wildlife` selector.
 
 <div class="c-project-code">
 
@@ -13,41 +65,30 @@ Open `style.css` and hide fact text until the user hovers.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 120
-line_highlights: 130-131, 135-137
+line_number_start: 108
+line_highlights: 109-114
 ---
-.fact {
-  font-size: 100%;
-  color: var(--fact-text-colour);
-  background-color: var(--fact-background);
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  padding: 0 5px 0 5px;
-  opacity: 0;
-  transition: 0.4s ease-in-out;
+
+/* Fact holder - wildlife */
+.fact-holder-wildlife {
+  display: grid;
+  height: 70vh;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
-/* Fact hover */
-.fact:hover {
-  opacity: 1;
-}
 --- /code ---
 
 </div>
 
---- /task ---
 
---- task ---
+### Step 3
 
-**Test:** Hover over a card and check the fact text fades in.
+**Test:** Run the Wildlife page and check you can hover over the cards to reveal the facts.
 
---- /task ---
 
 <div class="c-project-output">
 
-![output screenshot](images/step8.png)
+![output screenshot](images/step9.png)
 
 </div>

@@ -1,97 +1,70 @@
-<h2 class="c-project-heading--task">Create a wildlife grid</h2>
+<h2 class="c-project-heading--task">Create a climate grid</h2>
 
-Use a different grid layout to show wildlife facts in a new way.
+### Step 1
 
---- task ---
+Open `climate.html` and set up the fact cards.
 
-Open `wildlife.html` and set up the wildlife fact cards.
+Add the `fact-holder` class attribute to the `<div>`.
+
+Add a `fact-card` and a background image class to each `<span>` element.
+
+Add the `fact` class attribute to each paragraph.
 
 <div class="c-project-code">
 
 --- code ---
 ---
 language: html
-filename: wildlife.html
+filename: climate.html
 line_numbers: true
-line_number_start: 24
-line_highlights: 27-48
+line_number_start: 25
+line_highlights: 27-46
 ---
-    <div class="hero-image wildlife"></div>
     <main>
       <section>
-        <h1>
-          Hover on the cards below to learn about the animals in Antarctica
-        </h1>
-        <div class="fact-holder-wildlife">
-          <span class="fact-card penguins">
+        <h1>Antarctica's climate</h1>
+      </section>
+      <section>
+        <h1>Hover on the cards below to learn about the climate in Antarctica</h1>
+        <div class="fact-holder">
+          <span class="fact-card temperature">
             <p class="fact">
-              Emperor penguins live in colonies on sea ice. Sea ice is frozen sea water and it forms a fringe around the Antarctic continent.
+              Antarctica is the coldest continent on Earth. The average temperature in the interior is -57°C, during winter it can reach -90°C.
             </p>
           </span>
-          <span class="fact-card krill">
+          <span class="fact-card sunburn">
             <p class="fact">
-              Krill is eaten by many organisms, such as penguins, birds, and even the ginormous elephant seal!
+              You can get sunburn on Antarctica as the snow reflects nearly all of the sun's ultraviolet rays. You may not feel the heat, but you still need to keep your skin safe from the rays.
             </p>
           </span>
-          <span class="fact-card seals">
+          <span class="fact-card ice">
             <p class="fact">
-              Seals have thick beautiful fur coats and blubber, making them supremely adapted to the cold.
+              Antarctica's ice sheet is, on average, 1.6km thick and covers about 98% of the continent. This ice sheet is nearly 90% of the entire world’s ice!
             </p>
           </span>
-          <span class="fact-card orcas">
+          <span class="fact-card rainfall">
             <p class="fact">
-              At the top of the food chain, there are Orcas, often known as Killer Whales. These are the biggest carnivores on Earth, reaching almost 10m in length!
+              Technically, Antarctica is a desert because it is so dry there. The average annual precipitation on the coast is just 166mm.
             </p>
           </span>
         </div>
       </section>
     </main>
-          
+  </body>
+</html>
+    
 --- /code ---
 
 </div>
 
---- /task ---
 
---- task ---
+### Step 2
 
-Open `style.css`.
+**Test:** Run the Climate page and check you can hover over the cards to reveal the facts.
 
-Add the `fact-holder-wildlife` selector.
-
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 108
-line_highlights: 109-114
----
-
-/* Fact holder - wildlife */
-.fact-holder-wildlife {
-  display: grid;
-  height: 70vh;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 2fr;
-}
-
---- /code ---
-
-</div>
-
---- /task ---
-
---- task ---
-
-**Test:** Run the Wildlife page and check you can hover over the cards to reveal the facts.
-
---- /task ---
 
 <div class="c-project-output">
 
-![output screenshot](images/step9.png)
+![output screenshot](images/step10.png)
 
 </div>

@@ -1,35 +1,12 @@
-<h2 class="c-project-heading--task">Add hero images</h2>
+<h2 class="c-project-heading--task">Different hero images</h2>
 
-Add a big 'hero image' at the top of a page to show what it’s about.
+Each page should have its own hero image that represents its content!
 
---- task ---
+### Step 1
 
-Open `index.html` and add a hero image `<div>` underneath the header on the homepage.
+Inside `style.css`, find the `/* Hero image - wildlife */` comment and add a new class selector for wildlife underneath it.
 
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: index.html
-line_numbers: true
-line_number_start: 23
-line_highlights: 24
----
-    </header>
-    <div class="hero-image"></div>
-    <main>
---- /code ---
-
-</div>
-
---- /task ---
-
---- task ---
-
-In `style.css`, find the `/* Hero image - homepage */` comment and add a new selector for the `hero-image` class underneath it.
-
-Instead of adding an `<img>` element to the HTML, you can use the CSS `background-image` property to add your image. 
+You can set a new `background-image` property, which will overwrite the one set in the `hero-image` class.
 
 <div class="c-project-code">
 
@@ -38,32 +15,97 @@ Instead of adding an `<img>` element to the HTML, you can use the CSS `backgroun
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 82
-line_highlights: 83-88
+line_number_start: 90
+line_highlights: 91-93
 ---
-
-/* Hero image - homepage */
-.hero-image {
-  min-height: 50vh; /* 50% of the visible area of the page */
-  background-image: url('antarctic-lights.jpg'); 
-  background-size: cover;
-  background-position: center;
+/* Hero image - wildlife */
+.wildlife {
+  background-image: url('antarctic-penguins.jpg');
 }
 
 --- /code ---
 
 </div>
 
---- /task ---
 
---- task ---
+### Step 2
 
-**Test:** Check a large image appears near the top of the homepage.
+Apply the new `wildlife` class as an **addition** to the `hero-image` class in `wildlife.html`.
 
---- /task ---
+<div class="c-project-code">
+
+--- code ---
+---
+language: html
+filename: wildlife.html
+line_numbers: true
+line_number_start: 23
+line_highlights: 25
+---
+    </header>
+    <div class="hero-image wildlife"></div>
+    <main>
+
+--- /code ---
+
+</div>
+
+
+### Step 3
+
+Find the `/* Hero image - climate */` comment and add a new class selector for climate underneath it.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 95
+line_highlights: 96-98
+---
+/* Hero image - climate */
+.climate {
+  background-image: url('antarctic-daytime.jpg');
+}
+
+--- /code ---
+
+</div>
+
+
+### Step 4
+
+Now apply the new `climate` class as an **addition** to the `hero-image` class in `climate.html`.
+
+<div class="c-project-code">
+
+--- code ---
+---
+language: html
+filename: climate.html
+line_numbers: true
+line_number_start: 22
+line_highlights: 24
+---
+
+  </header>
+  <div class="hero-image climate"></div>
+  <main>
+
+--- /code ---
+
+</div>
+
+
+### Step 5
+
+**Test:** Check a large image appears near the top of each page.
+
 
 <div class="c-project-output">
 
-![output screenshot](images/step5.png)
+![output screenshot](images/step6.png)
 
 </div>

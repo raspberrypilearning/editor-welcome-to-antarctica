@@ -1,101 +1,53 @@
-<h2 class="c-project-heading--task">Change the font</h2>
+<h2 class="c-project-heading--task">Create a navigation bar</h2>
 
---- task ---
+### Step 1
 
-Import a Google font to style the fonts on your pages.
-
-Open `defaults.css`.
-
-You can find it in the file list next to `style.css` and your HTML files.
-
-Place this `@import` statement at the top of your file.
+Open `index.html` and create a navigation bar so visitors can move between pages.
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: css
-filename: defaults.css
+language: html
+filename: index.html
 line_numbers: true
-line_number_start: 1
-line_highlights: 2
+line_number_start: 11
+line_highlights: 12-21
 ---
-
-/* Import a font */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-
+    <header>
+      <nav>
+        <div class="nav-items"> 
+          <a class="active" href="index.html">Home</a>
+          <a href="wildlife.html">Wildlife</a>
+          <a href="climate.html">Climate</a>
+        </div>
+        <div class="burger">
+          <span id="openHam">&#9776;</span>
+          <span id="closeHam">&#x2716;</span>
+        </div>
+      </nav>
+    </header>
 --- /code ---
 
 </div>
 
---- /task ---
 
---- task ---
+### Step 2
 
-Create a new variable inside the `:root` selector, called `--body-font` and set the new Orbitron font.
+Do the same for the other pages: `wildlife.html` and `climate.html`.
 
-<div class="c-project-code">
+Add the `active` class attribute to the link for the page you are working on.
 
---- code ---
----
-language: css
-filename: defaults.css
-line_numbers: true
-line_number_start: 4
-line_highlights: 7
----
+The `active` link will not look different yet. You will style it in the next step.
 
-:root {
-  --body-background: #ece8ef;
-  --body-text-colour: #000500;
-  --body-font: "Orbitron", sans-serif;
 
---- /code ---
+### Step 3
 
-</div>
+**Test:** Click Run, then click the links in your navbar to check you can open **Home**, **Wildlife**, and **Climate**.
 
---- /task ---
-
---- task ---
-
-Add the `font-family` property inside the body selector and set it to the new `--body-font` variable you just created.
-
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 1
-line_highlights: 11
----
-body {
-  background-color: var(--body-background);
-  color: var(--body-text-colour);
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  width: 100%;
-  min-height: 100vh; /* Make the content fill the page so the footer is at the bottom */
-  display: flex;
-  flex-direction: column;
-  font-family: var(--body-font);
-}
---- /code ---
-
-</div>
-
---- /task ---
-
---- task ---
-
-**Test:** Click Run to see your new font!
-
---- /task ---
 
 <div class="c-project-output">
 
-![output screenshot](images/step2.png)
+![output screenshot](images/step3.png)
 
 </div>

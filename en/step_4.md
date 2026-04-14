@@ -1,12 +1,34 @@
-<h2 class="c-project-heading--task">Style the navigation bar</h2>
+<h2 class="c-project-heading--task">Add hero images</h2>
 
-Use CSS to turn your links into a clear navigation bar.
+Add a big 'hero image' at the top of a page to show what it’s about.
 
---- task ---
+### Step 1
 
-Open `style.css` and find the `/* Nav bar */` comment.
+Open `index.html` and add a hero image `<div>` underneath the header on the homepage.
 
-Add the navbar styles underneath that comment.
+<div class="c-project-code">
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: true
+line_number_start: 23
+line_highlights: 24
+---
+    </header>
+    <div class="hero-image"></div>
+    <main>
+--- /code ---
+
+</div>
+
+
+### Step 2
+
+In `style.css`, find the `/* Hero image - homepage */` comment and add a new selector for the `hero-image` class underneath it.
+
+Instead of adding an `<img>` element to the HTML, you can use the CSS `background-image` property to add your image. 
 
 <div class="c-project-code">
 
@@ -15,66 +37,30 @@ Add the navbar styles underneath that comment.
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 37
-line_highlights: 45, 50-53, 56-60, 63-65, 68-71, 74-80
+line_number_start: 82
+line_highlights: 83-88
 ---
-/* Nav bar */
-nav {
-  padding: 0 15px;
-  height: 60px;
-  font-size: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--nav-colour);
+
+/* Hero image - homepage */
+.hero-image {
+  min-height: 50vh; /* 50% of the visible area of the page */
+  background-image: url('antarctic-lights.jpg'); 
+  background-size: cover;
+  background-position: center;
 }
 
-/* Nav items */
-.nav-items {
-  display: flex;
-  gap: 100px;
-}
-
-/* Nav bar links */
-.nav-items > a {
-  color: var(--nav-items-colour);
-  text-decoration: none;
-  transition: 0.4s ease-in-out;
-}
-
-/* Nav links hover */
-.nav-items > a:hover {
-  color: var(--nav-items-active);
-}
-
-/* Nav links active */
-.nav-items .active {
-  color: var(--nav-items-active);
-  pointer-events: none;
-}
-
-/* Burger menu */
-.burger {
-  display: none;
-  font-size: 20px;
-  font-weight: 800;
-  color: var(--burger-colour);
-  margin-left: auto;
-}
 --- /code ---
 
 </div>
 
---- /task ---
 
---- task ---
+### Step 3
 
-**Test:** Run your project again and check the navbar is styled and the current page link now looks “active”.
+**Test:** Check a large image appears near the top of the homepage.
 
---- /task ---
 
 <div class="c-project-output">
 
-![output screenshot](images/step4.png)
+![output screenshot](images/step5.png)
 
 </div>

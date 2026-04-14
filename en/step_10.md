@@ -1,72 +1,113 @@
-<h2 class="c-project-heading--task">Create a climate grid</h2>
+<h2 class="c-project-heading--task">Make the menu work on small screens</h2>
 
---- task ---
+Use JavaScript so the burger menu can show and hide the navigation links.
 
-Open `climate.html` and set up the fact cards.
+### Step 1
 
-Add the `fact-holder` class attribute to the `<div>`.
+Open `responsive-navbar.js` and add click events for opening and closing the menu.
 
-Add a `fact-card` and a background image class to each `<span>` element.
+<div class="c-project-code">
 
-Add the `fact` class attribute to each paragraph.
+--- code ---
+---
+language: javascript
+filename: responsive-navbar.js
+line_numbers: true
+line_number_start: 1
+line_highlights: 15-16
+---
+let openHam = document.querySelector('#openHam');
+let closeHam = document.querySelector('#closeHam');
+let navigationItems = document.querySelector('.nav-items');
+
+const burgerEvent = (navigation, close, open) => { 
+    if (navigation == "none"){
+        navigationItems.style.removeProperty("display");
+    } else {
+        navigationItems.style.display = navigation;
+    }
+    closeHam.style.display = close;
+    openHam.style.display = open;
+}
+
+openHam.addEventListener('click', () => burgerEvent("flex", "block", "none"));
+closeHam.addEventListener('click', () => burgerEvent("none", "none", "block"));
+--- /code ---
+
+</div>
+
+
+### Step 2
+
+Also add the **JavaScript** file to each page. 
 
 <div class="c-project-code">
 
 --- code ---
 ---
 language: html
-filename: climate.html
+filename: wildlife.html
 line_numbers: true
-line_number_start: 25
-line_highlights: 27-46
+line_number_start: 53
+line_highlights: 54
 ---
-    <main>
-      <section>
-        <h1>Antarctica's climate</h1>
-      </section>
-      <section>
-        <h1>Hover on the cards below to learn about the climate in Antarctica</h1>
-        <div class="fact-holder">
-          <span class="fact-card temperature">
-            <p class="fact">
-              Antarctica is the coldest continent on Earth. The average temperature in the interior is -57°C, during winter it can reach -90°C.
-            </p>
-          </span>
-          <span class="fact-card sunburn">
-            <p class="fact">
-              You can get sunburn on Antarctica as the snow reflects nearly all of the sun's ultraviolet rays. You may not feel the heat, but you still need to keep your skin safe from the rays.
-            </p>
-          </span>
-          <span class="fact-card ice">
-            <p class="fact">
-              Antarctica's ice sheet is, on average, 1.6km thick and covers about 98% of the continent. This ice sheet is nearly 90% of the entire world’s ice!
-            </p>
-          </span>
-          <span class="fact-card rainfall">
-            <p class="fact">
-              Technically, Antarctica is a desert because it is so dry there. The average annual precipitation on the coast is just 166mm.
-            </p>
-          </span>
-        </div>
-      </section>
     </main>
+    <script type="text/javascript" src="responsive-navbar.js"></script>
   </body>
 </html>
-    
+
 --- /code ---
 
 </div>
 
---- /task ---
 
---- task ---
+### Step 3
 
-**Test:** Run the Climate page and check you can hover over the cards to reveal the facts.
+Show the burger menu and stack the links when the screen is small.
 
---- /task ---
+Open `style.css` and add a media query to change the navbar layout on small screens.
 
-<div class="c-project-output">
+<div class="c-project-code">
 
-![output screenshot](images/step10.png)
+--- code ---
+---
+language: css
+filename: style.css
+line_numbers: true
+line_number_start: 211
+line_highlights: 212-236
+---
+/* Media query */
+@media screen and (max-width: 768px) {
+  
+  .burger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .burger #closeHam {
+    display: none;
+  }
+
+  .nav-items {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 58px;
+    background-color: var(--nav-colour);
+    width: 100%;
+    height: calc(100vh - 58px);
+    padding-top: 60px;
+    gap: 10vh;
+  }
+}
+--- /code ---
 
 </div>
+
+
+### Step 4
+
+**Test:** Make your browser window narrow and click the burger icon. The links should appear and disappear.
