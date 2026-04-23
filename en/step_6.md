@@ -2,7 +2,9 @@
 
 Turn your facts into image cards arranged in a grid.
 
-### Step 1
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
 
 Open `index.html` and update the first `<section>`.
 
@@ -50,8 +52,7 @@ line_highlights: 28-50
 
 </div>
 
-
-### Step 2
+## Step 2
 
 Open `style.css` and find the `/* Fact card */` comment.
 
@@ -78,10 +79,9 @@ line_highlights: 112-117
 
 </div>
 
+## Now run your code
 
-### Step 3
-
-**Test:** Run your homepage code and check that you can see four fact cards arranged in a grid.
+Run your homepage code and check that you can see four fact cards arranged in a grid.
 
 
 <div class="c-project-output">
@@ -89,3 +89,5 @@ line_highlights: 112-117
 ![output screenshot](images/step7.png)
 
 </div>
+
+Confirm the observable result.

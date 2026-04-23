@@ -2,7 +2,9 @@
 
 Add a big 'hero image' at the top of a page to show what it’s about.
 
-### Step 1
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
 
 Open `index.html` and add a hero image `<div>` underneath the header on the homepage.
 
@@ -23,8 +25,7 @@ line_highlights: 24
 
 </div>
 
-
-### Step 2
+## Step 2
 
 In `style.css`, find the `/* Hero image - homepage */` comment and add a new selector for the `hero-image` class underneath it.
 
@@ -53,10 +54,9 @@ line_highlights: 83-88
 
 </div>
 
+## Now run your code
 
-### Step 3
-
-**Test:** Check a large image appears near the top of the homepage.
+Check a large image appears near the top of the homepage.
 
 
 <div class="c-project-output">
@@ -64,3 +64,5 @@ line_highlights: 83-88
 ![output screenshot](images/step5.png)
 
 </div>
+
+Confirm the observable result.

@@ -2,7 +2,9 @@
 
 Use JavaScript so the burger menu can show and hide the navigation links.
 
-### Step 1
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
 
 Open `responsive-navbar.js` and add click events for opening and closing the menu.
 
@@ -36,8 +38,7 @@ closeHam.addEventListener('click', () => burgerEvent("none", "none", "block"));
 
 </div>
 
-
-### Step 2
+## Step 2
 
 Also add the **JavaScript** file to each page. 
 
@@ -60,8 +61,7 @@ line_highlights: 54
 
 </div>
 
-
-### Step 3
+## Step 3
 
 Show the burger menu and stack the links when the screen is small.
 
@@ -107,7 +107,8 @@ line_highlights: 212-236
 
 </div>
 
+## Now run your code
 
-### Step 4
+Make your browser window narrow and click the burger icon. The links should appear and disappear.
 
-**Test:** Make your browser window narrow and click the burger icon. The links should appear and disappear.
+Confirm the observable result.

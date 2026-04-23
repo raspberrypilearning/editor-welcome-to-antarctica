@@ -1,8 +1,10 @@
 <h2 class="c-project-heading--task">Create a navigation bar</h2>
 
-### Step 1
-
 Open `index.html` and create a navigation bar so visitors can move between pages.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
 
 <div class="c-project-code">
 
@@ -31,8 +33,7 @@ line_highlights: 12-21
 
 </div>
 
-
-### Step 2
+## Step 2
 
 Do the same for the other pages: `wildlife.html` and `climate.html`.
 
@@ -40,10 +41,9 @@ Add the `active` class attribute to the link for the page you are working on.
 
 The `active` link will not look different yet. You will style it in the next step.
 
+## Now run your code
 
-### Step 3
-
-**Test:** Click Run, then click the links in your navbar to check you can open **Home**, **Wildlife**, and **Climate**.
+Click Run, then click the links in your navbar to check you can open **Home**, **Wildlife**, and **Climate**.
 
 
 <div class="c-project-output">
@@ -51,3 +51,5 @@ The `active` link will not look different yet. You will style it in the next ste
 ![output screenshot](images/step3.png)
 
 </div>
+
+Confirm the observable result.

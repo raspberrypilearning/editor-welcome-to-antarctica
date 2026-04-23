@@ -1,8 +1,8 @@
 <h2 class="c-project-heading--task">Create a climate grid</h2>
 
-### Step 1
-
 Open `climate.html` and set up the fact cards.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Add the `fact-holder` class attribute to the `<div>`.
 
@@ -57,10 +57,9 @@ line_highlights: 27-46
 
 </div>
 
+## Now run your code
 
-### Step 2
-
-**Test:** Run the Climate page and check you can hover over the cards to reveal the facts.
+Run the Climate page and check you can hover over the cards to reveal the facts.
 
 
 <div class="c-project-output">
@@ -68,3 +67,5 @@ line_highlights: 27-46
 ![output screenshot](images/step10.png)
 
 </div>
+
+Confirm the observable result.

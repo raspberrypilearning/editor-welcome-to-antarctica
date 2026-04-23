@@ -1,8 +1,10 @@
 <h2 class="c-project-heading--task">Change the font</h2>
 
-### Step 1
-
 Import a Google font to style the fonts on your pages.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
 
 Open `defaults.css`.
 
@@ -28,8 +30,7 @@ line_highlights: 2
 
 </div>
 
-
-### Step 2
+## Step 2
 
 Create a new variable inside the `:root` selector, called `--body-font` and set the new Orbitron font.
 
@@ -53,8 +54,7 @@ line_highlights: 7
 
 </div>
 
-
-### Step 3
+## Step 3
 
 Add the `font-family` property inside the body selector and set it to the new `--body-font` variable you just created.
 
@@ -84,10 +84,9 @@ body {
 
 </div>
 
+## Now run your code
 
-### Step 4
-
-**Test:** Click Run to see your new font!
+Click Run to see your new font!
 
 
 <div class="c-project-output">
@@ -95,3 +94,5 @@ body {
 ![output screenshot](images/step2.png)
 
 </div>
+
+Confirm the observable result.

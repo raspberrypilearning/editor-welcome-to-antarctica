@@ -2,7 +2,9 @@
 
 Each page should have its own hero image that represents its content!
 
-### Step 1
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+## Step 1
 
 Inside `style.css`, find the `/* Hero image - wildlife */` comment and add a new class selector for wildlife underneath it.
 
@@ -27,8 +29,7 @@ line_highlights: 91-93
 
 </div>
 
-
-### Step 2
+## Step 2
 
 Apply the new `wildlife` class as an **addition** to the `hero-image` class in `wildlife.html`.
 
@@ -50,8 +51,7 @@ line_highlights: 25
 
 </div>
 
-
-### Step 3
+## Step 3
 
 Find the `/* Hero image - climate */` comment and add a new class selector for climate underneath it.
 
@@ -74,8 +74,7 @@ line_highlights: 96-98
 
 </div>
 
-
-### Step 4
+## Step 4
 
 Now apply the new `climate` class as an **addition** to the `hero-image` class in `climate.html`.
 
@@ -98,10 +97,9 @@ line_highlights: 24
 
 </div>
 
+## Now run your code
 
-### Step 5
-
-**Test:** Check a large image appears near the top of each page.
+Check a large image appears near the top of each page.
 
 
 <div class="c-project-output">
@@ -109,3 +107,5 @@ line_highlights: 24
 ![output screenshot](images/step6.png)
 
 </div>
+
+Confirm the observable result.

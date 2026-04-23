@@ -2,7 +2,7 @@
 
 Make your facts appear when you hover over a card.
 
-### Step 1
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Open `style.css` and hide fact text until the user hovers.
 
@@ -38,10 +38,9 @@ line_highlights: 130-131, 135-137
 
 </div>
 
+## Now run your code
 
-### Step 2
-
-**Test:** Hover over a card and check the fact text fades in.
+Hover over a card and check the fact text fades in.
 
 
 <div class="c-project-output">
@@ -49,3 +48,5 @@ line_highlights: 130-131, 135-137
 ![output screenshot](images/step8.png)
 
 </div>
+
+Confirm the observable result.

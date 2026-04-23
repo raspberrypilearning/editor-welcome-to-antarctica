@@ -2,7 +2,7 @@
 
 Use CSS to turn your links into a clear navigation bar.
 
-### Step 1
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Open `style.css` and find the `/* Nav bar */` comment.
 
@@ -65,10 +65,9 @@ nav {
 
 </div>
 
+## Now run your code
 
-### Step 2
-
-**Test:** Run your project again and check the navbar is styled and the current page link now looks “active”.
+Run your project again and check the navbar is styled and the current page link now looks “active”.
 
 
 <div class="c-project-output">
@@ -76,3 +75,5 @@ nav {
 ![output screenshot](images/step4.png)
 
 </div>
+
+Confirm the observable result.
