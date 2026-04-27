@@ -86,13 +86,10 @@ body {
 
 ## Now run your code
 
-Click Run to see your new font!
-
-
 <div class="c-project-output">
 
 ![output screenshot](images/step2.png)
 
 </div>
 
-Confirm the observable result.
+Click **Run** and check that the page uses the new font.

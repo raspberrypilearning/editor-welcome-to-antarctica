@@ -40,13 +40,10 @@ line_highlights: 130-131, 135-137
 
 ## Now run your code
 
-Hover over a card and check the fact text fades in.
-
-
 <div class="c-project-output">
 
 ![output screenshot](images/step8.png)
 
 </div>
 
-Confirm the observable result.
+Hover over a card and check that the fact text fades in.

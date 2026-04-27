@@ -99,13 +99,10 @@ line_highlights: 24
 
 ## Now run your code
 
-Check a large image appears near the top of each page.
-
-
 <div class="c-project-output">
 
 ![output screenshot](images/step6.png)
 
 </div>
 
-Confirm the observable result.
+Run your project and check that a large image appears near the top of each page.

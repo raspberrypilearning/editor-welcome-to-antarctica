@@ -84,13 +84,10 @@ line_highlights: 109-114
 
 ## Now run your code
 
-Run the Wildlife page and check you can hover over the cards to reveal the facts.
-
-
 <div class="c-project-output">
 
 ![output screenshot](images/step9.png)
 
 </div>
 
-Confirm the observable result.
+Run the Wildlife page and check that you can hover over the cards to reveal the facts.

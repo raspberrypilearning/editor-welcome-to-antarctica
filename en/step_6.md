@@ -81,13 +81,10 @@ line_highlights: 112-117
 
 ## Now run your code
 
-Run your homepage code and check that you can see four fact cards arranged in a grid.
-
-
 <div class="c-project-output">
 
 ![output screenshot](images/step7.png)
 
 </div>
 
-Confirm the observable result.
+Run your homepage code and check that four fact cards are arranged in a grid.

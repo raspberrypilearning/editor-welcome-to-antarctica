@@ -59,13 +59,10 @@ line_highlights: 27-46
 
 ## Now run your code
 
-Run the Climate page and check you can hover over the cards to reveal the facts.
-
-
 <div class="c-project-output">
 
 ![output screenshot](images/step10.png)
 
 </div>
 
-Confirm the observable result.
+Run the Climate page and check that you can hover over the cards to reveal the facts.

@@ -56,13 +56,10 @@ line_highlights: 83-88
 
 ## Now run your code
 
-Check a large image appears near the top of the homepage.
-
-
 <div class="c-project-output">
 
 ![output screenshot](images/step5.png)
 
 </div>
 
-Confirm the observable result.
+Run your project and check that a large image appears near the top of the homepage.

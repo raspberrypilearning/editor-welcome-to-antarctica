@@ -109,6 +109,4 @@ line_highlights: 212-236
 
 ## Now run your code
 
-Make your browser window narrow and click the burger icon. The links should appear and disappear.
-
-Confirm the observable result.
+Make your browser window narrow, click the burger icon, and check that the links appear and disappear.

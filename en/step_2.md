@@ -43,13 +43,10 @@ The `active` link will not look different yet. You will style it in the next ste
 
 ## Now run your code
 
-Click Run, then click the links in your navbar to check you can open **Home**, **Wildlife**, and **Climate**.
-
-
 <div class="c-project-output">
 
 ![output screenshot](images/step3.png)
 
 </div>
 
-Confirm the observable result.
+Click **Run**, then click the navbar links, and check that you can open **Home**, **Wildlife**, and **Climate**.

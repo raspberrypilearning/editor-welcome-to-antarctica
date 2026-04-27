@@ -67,13 +67,10 @@ nav {
 
 ## Now run your code
 
-Run your project again and check the navbar is styled and the current page link now looks “active”.
-
-
 <div class="c-project-output">
 
 ![output screenshot](images/step4.png)
 
 </div>
 
-Confirm the observable result.
+Run your project again and check that the navbar is styled and the current page link looks active.
