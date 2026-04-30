@@ -1,61 +1,62 @@
-<h2 class="c-project-heading--task">Different hero images</h2>
+<h2 class="c-project-heading--task">Arrange facts with grids</h2>
 
-Each page should have its own hero image that represents its content!
+Turn your facts into image cards arranged in a grid.
 
---- task ---
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
-Inside `style.css`, find the `/* Hero image - wildlife */` comment and add a new class selector for wildlife underneath it.
+## Step 1
 
-You can set a new `background-image` property, which will overwrite the one set in the `hero-image` class.
+Open `index.html` and update the first `<section>`.
 
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 90
-line_highlights: 91-93
----
-/* Hero image - wildlife */
-.wildlife {
-  background-image: url('antarctic-penguins.jpg');
-}
-
---- /code ---
-
-</div>
-
---- /task ---
-
---- task ---
-
-Apply the new `wildlife` class as an **addition** to the `hero-image` class in `wildlife.html`.
+Keep the existing `Welcome to Antarctica!` heading, then add the second heading and the `fact-holder` `<div>` inside the same section.
 
 <div class="c-project-code">
 
 --- code ---
 ---
 language: html
-filename: wildlife.html
+filename: index.html
 line_numbers: true
-line_number_start: 23
-line_highlights: 25
+line_number_start: 25
+line_highlights: 28-50
 ---
-    </header>
-    <div class="hero-image wildlife"></div>
     <main>
-
+      <section>
+        <h1>Welcome to Antarctica!</h1>
+        <h1>Hover on the cards below to read some facts about Antarctica</h1>
+        <div class="fact-holder">
+          <span class="fact-card sun">
+            <p class="fact">
+              Antarctica is the coldest continent, but it is also the driest! On average, there is just 200mm (8 inches) of precipitation a year, the majority of it along the coast.
+            </p>
+          </span>
+          <span class="fact-card discovery">
+            <p class="fact">
+              The continent is thought to have been discovered relatively late in human history. In 1820, Fabian Gottlieb von Bellingshausen and Mikhail Lazarev lead a Russian expedition to prove the exsistence of Antarctica and were probably the first to see the ice shelves. 
+            </p>
+          </span>
+          <span class="fact-card explorers">
+            <p class="fact">
+              Who first set foot on the continent? The first documented and confirmed landing was a crew led by Norwegian Leonard Kristensen at Cape Adare.
+            </p>
+          </span>
+          <span class="fact-card ownership">
+            <p class="fact">
+              Antarctica is governed by the Antarctic Treaty. The Treaty now has 56 supporting nations, 29 of which are considered “Consultative Parties” and are actively involved in decision-making.
+            </p>
+          </span>
+        </div>
+      </section>
+    </main>
 --- /code ---
 
 </div>
 
---- /task ---
+## Step 2
 
---- task ---
+Open `style.css` and find the `/* Fact card */` comment.
 
-Find the `/* Hero image - climate */` comment and add a new class selector for climate underneath it.
+Add this CSS so each fact card fills its grid area and shows its background image properly.
 
 <div class="c-project-code">
 
@@ -64,53 +65,26 @@ Find the `/* Hero image - climate */` comment and add a new class selector for c
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 95
-line_highlights: 96-98
+line_number_start: 111
+line_highlights: 112-117
 ---
-/* Hero image - climate */
-.climate {
-  background-image: url('antarctic-daytime.jpg');
+/* Fact card */
+.fact-card {
+  width: 100%;
+  display: flex;
+  background-size: cover;
+  background-position: center;
 }
-
 --- /code ---
 
 </div>
 
---- /task ---
-
---- task ---
-
-Now apply the new `climate` class as an **addition** to the `hero-image` class in `climate.html`.
-
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: climate.html
-line_numbers: true
-line_number_start: 22
-line_highlights: 24
----
-
-  </header>
-  <div class="hero-image climate"></div>
-  <main>
-
---- /code ---
-
-</div>
-
---- /task ---
-
---- task ---
-
-**Test:** Check a large image appears near the top of each page.
-
---- /task ---
+## Now run your code
 
 <div class="c-project-output">
 
-![output screenshot](images/step6.png)
+![output screenshot](images/step7.png)
 
 </div>
+
+Run your homepage code and check that four fact cards are arranged in a grid.

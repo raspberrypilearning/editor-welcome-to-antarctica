@@ -1,56 +1,76 @@
-<h2 class="c-project-heading--task">Create a navigation bar</h2>
+<h2 class="c-project-heading--task">Style the navigation bar</h2>
 
---- task ---
+Use CSS to turn your links into a clear navigation bar.
 
-Open `index.html` and create a navigation bar so visitors can move between pages.
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+Open `style.css` and find the `/* Nav bar */` comment.
+
+Add the navbar styles underneath that comment.
 
 <div class="c-project-code">
 
 --- code ---
 ---
-language: html
-filename: index.html
+language: css
+filename: style.css
 line_numbers: true
-line_number_start: 11
-line_highlights: 12-21
+line_number_start: 37
+line_highlights: 45, 50-53, 56-60, 63-65, 68-71, 74-80
 ---
-    <header>
-      <nav>
-        <div class="nav-items"> 
-          <a class="active" href="index.html">Home</a>
-          <a href="wildlife.html">Wildlife</a>
-          <a href="climate.html">Climate</a>
-        </div>
-        <div class="burger">
-          <span id="openHam">&#9776;</span>
-          <span id="closeHam">&#x2716;</span>
-        </div>
-      </nav>
-    </header>
+/* Nav bar */
+nav {
+  padding: 0 15px;
+  height: 60px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--nav-colour);
+}
+
+/* Nav items */
+.nav-items {
+  display: flex;
+  gap: 100px;
+}
+
+/* Nav bar links */
+.nav-items > a {
+  color: var(--nav-items-colour);
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+
+/* Nav links hover */
+.nav-items > a:hover {
+  color: var(--nav-items-active);
+}
+
+/* Nav links active */
+.nav-items .active {
+  color: var(--nav-items-active);
+  pointer-events: none;
+}
+
+/* Burger menu */
+.burger {
+  display: none;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--burger-colour);
+  margin-left: auto;
+}
 --- /code ---
 
 </div>
 
---- /task ---
-
---- task ---
-
-Do the same for the other pages: `wildlife.html` and `climate.html`.
-
-Add the `active` class attribute to the link for the page you are working on.
-
-The `active` link will not look different yet. You will style it in the next step.
-
---- /task ---
-
---- task ---
-
-**Test:** Click Run, then click the links in your navbar to check you can open **Home**, **Wildlife**, and **Climate**.
-
---- /task ---
+## Now run your code
 
 <div class="c-project-output">
 
-![output screenshot](images/step3.png)
+![output screenshot](images/step4.png)
 
 </div>
+
+Run your project again and check that the navbar is styled and the current page link looks active.

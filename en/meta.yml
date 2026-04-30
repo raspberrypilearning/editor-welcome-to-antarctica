@@ -6,21 +6,21 @@ copyedit: false
 last_tested: '2026-03-16'
 listed: false
 pdf: false
+landing: true
 steps:
-- title: Step 1
-- title: Step 2
-  completion:
-  - engaged
-- title: Step 3
-- title: Step 4
-- title: Step 5
-- title: Step 6
-- title: Step 7
-- title: Step 8
-- title: Step 9
-- title: Step 10
-  completion:
-  - internal
-- title: Step 11
-  completion:
-  - external
+  - title: Change the font
+  - title: Create a navigation bar
+    completion:
+      - engaged
+  - title: Style the navigation bar
+  - title: Add hero images
+  - title: Different hero images
+  - title: Arrange facts with grids
+  - title: Add hover animations
+  - title: Create a wildlife grid
+  - title: Create a climate grid
+    completion:
+      - internal
+  - title: Make the menu work on small screens
+    completion:
+      - external
