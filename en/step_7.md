@@ -1,10 +1,6 @@
 <h2 class="c-project-heading--task">Add hover animations</h2>
 
-Make your facts appear when you hover over a card.
-
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
-Open `style.css` and hide fact text until the user hovers.
+In `style.css`, add this code to hide the facts until the user hovers over them. 
 
 <div class="c-project-code">
 
@@ -39,11 +35,10 @@ line_highlights: 130-131, 135-137
 </div>
 
 ## Now run your code
+Hover over a card and check that the fact text fades in.
 
 <div class="c-project-output">
 
 ![output screenshot](images/step8.png)
 
 </div>
-
-Hover over a card and check that the fact text fades in.
