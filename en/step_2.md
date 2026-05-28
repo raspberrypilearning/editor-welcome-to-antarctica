@@ -1,10 +1,7 @@
 <h2 class="c-project-heading--task">Create a navigation bar</h2>
 
-Open `index.html` and create a navigation bar so visitors can move between pages.
-
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
+Open `index.html` and create a navigation bar so visitors can move between pages.
 
 <div class="c-project-code">
 
@@ -35,18 +32,17 @@ line_highlights: 12-21
 
 ## Step 2
 
-Do the same for the other pages: `wildlife.html` and `climate.html`.
+Open `wildlife.html` and `climate.html` and add the same code.
 
-Add the `active` class attribute to the link for the page you are working on.
+## Step 3
 
-The `active` link will not look different yet. You will style it in the next step.
+Add `class="active"` to the link for the file you are editing.
 
 ## Now run your code
+Click the navbar links, and check that you can open **Home**, **Wildlife**, and **Climate**.
 
 <div class="c-project-output">
 
 ![output screenshot](images/step3.png)
 
 </div>
-
-Click **Run**, then click the navbar links, and check that you can open **Home**, **Wildlife**, and **Climate**.
