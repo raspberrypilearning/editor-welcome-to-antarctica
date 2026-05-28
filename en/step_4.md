@@ -34,8 +34,8 @@ In `style.css`, find the `/* Hero image - homepage */` comment and add the `hero
 language: css
 filename: style.css
 line_numbers: true
-line_number_start: 72
-line_highlights: 73-78
+line_number_start: 81
+line_highlights: 72-87
 ---
 /* Hero image - homepage */
 .hero-image {
