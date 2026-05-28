@@ -1,12 +1,13 @@
 <h2 class="c-project-heading--task">Style the navigation bar</h2>
 
-Use CSS to turn your links into a clear navigation bar.
+In `style.css` find the `/* Nav bar */` comment.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+Add the styles in the code under each comment.
 
-Open `style.css` and find the `/* Nav bar */` comment.
-
-Add the navbar styles underneath that comment.
+> ### Tip
+> 
+> Run your code when you add each bit of code and see how it changes the site.
+{: .c-project-callout .c-project-callout--tip}
 
 <div class="c-project-code">
 
@@ -16,7 +17,7 @@ language: css
 filename: style.css
 line_numbers: true
 line_number_start: 37
-line_highlights: 45, 50-53, 56-60, 63-65, 68-71, 74-80
+line_highlights: 45, 49-52, 55-59, 62-64, 67-70, 73-79
 ---
 /* Nav bar */
 nav {
@@ -66,11 +67,10 @@ nav {
 </div>
 
 ## Now run your code
+Check that the navbar is styled and the current page link looks active.
 
 <div class="c-project-output">
 
 ![output screenshot](images/step4.png)
 
 </div>
-
-Run your project again and check that the navbar is styled and the current page link looks active.
