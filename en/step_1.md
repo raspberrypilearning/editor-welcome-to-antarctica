@@ -2,13 +2,9 @@
 
 Import a Google font to style the fonts on your pages.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
-Open `defaults.css`.
-
-You can find it in the file list next to `style.css` and your HTML files.
+Click on the project files tab and open `defaults.css`.
 
 Place this `@import` statement at the top of your file.
 
@@ -22,10 +18,8 @@ line_numbers: true
 line_number_start: 1
 line_highlights: 2
 ---
-
 /* Import a font */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-
 --- /code ---
 
 </div>
@@ -44,19 +38,18 @@ line_numbers: true
 line_number_start: 4
 line_highlights: 7
 ---
-
 :root {
   --body-background: #ece8ef;
   --body-text-colour: #000500;
   --body-font: "Orbitron", sans-serif;
-
+  --nav-colour: #33658a;
 --- /code ---
 
 </div>
 
 ## Step 3
 
-Add the `font-family` property inside the body selector and set it to the new `--body-font` variable you just created.
+Open `style.css` and add the `font-family`.
 
 <div class="c-project-code">
 
@@ -81,15 +74,13 @@ body {
   font-family: var(--body-font);
 }
 --- /code ---
-
 </div>
 
 ## Now run your code
+Check that the page uses the new font.
 
 <div class="c-project-output">
 
 ![output screenshot](images/step2.png)
 
 </div>
-
-Click **Run** and check that the page uses the new font.

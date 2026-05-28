@@ -2,11 +2,9 @@
 
 Turn your facts into image cards arranged in a grid.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
-Open `index.html` and update the first `<section>`.
+In **index.html** update the first `<section>`.
 
 Keep the existing `Welcome to Antarctica!` heading, then add the second heading and the `fact-holder` `<div>` inside the same section.
 
@@ -54,9 +52,9 @@ line_highlights: 28-50
 
 ## Step 2
 
-Open `style.css` and find the `/* Fact card */` comment.
+In `style.css`, find the `/* Fact card */` comment.
 
-Add this CSS so each fact card fills its grid area and shows its background image properly.
+Add this code so each fact card fills its grid area and shows its background image properly.
 
 <div class="c-project-code">
 
@@ -80,11 +78,10 @@ line_highlights: 112-117
 </div>
 
 ## Now run your code
+Check that four fact cards are arranged in a grid.
 
 <div class="c-project-output">
 
 ![output screenshot](images/step7.png)
 
 </div>
-
-Run your homepage code and check that four fact cards are arranged in a grid.

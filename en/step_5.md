@@ -2,13 +2,9 @@
 
 Each page should have its own hero image that represents its content!
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
-Inside `style.css`, find the `/* Hero image - wildlife */` comment and add a new class selector for wildlife underneath it.
-
-You can set a new `background-image` property, which will overwrite the one set in the `hero-image` class.
+In `style.css`, find the `/* Hero image - wildlife */` comment and the code underneath it.
 
 <div class="c-project-code">
 
@@ -24,14 +20,13 @@ line_highlights: 91-93
 .wildlife {
   background-image: url('antarctic-penguins.jpg');
 }
-
 --- /code ---
 
 </div>
 
 ## Step 2
 
-Apply the new `wildlife` class as an **addition** to the `hero-image` class in `wildlife.html`.
+In **wildlife.html** add the `hero-image` class.
 
 <div class="c-project-code">
 
@@ -41,19 +36,18 @@ language: html
 filename: wildlife.html
 line_numbers: true
 line_number_start: 23
-line_highlights: 25
+line_highlights: 24
 ---
     </header>
     <div class="hero-image wildlife"></div>
     <main>
-
 --- /code ---
 
 </div>
 
 ## Step 3
 
-Find the `/* Hero image - climate */` comment and add a new class selector for climate underneath it.
+In **style.css**, find the `/* Hero image - climate */` comment and add the following code underneath it.
 
 <div class="c-project-code">
 
@@ -69,14 +63,13 @@ line_highlights: 96-98
 .climate {
   background-image: url('antarctic-daytime.jpg');
 }
-
 --- /code ---
 
 </div>
 
 ## Step 4
 
-Now apply the new `climate` class as an **addition** to the `hero-image` class in `climate.html`.
+In **climate.html**, add the new `climate` class.
 
 <div class="c-project-code">
 
@@ -86,23 +79,20 @@ language: html
 filename: climate.html
 line_numbers: true
 line_number_start: 22
-line_highlights: 24
+line_highlights: 23
 ---
-
   </header>
   <div class="hero-image climate"></div>
   <main>
-
 --- /code ---
 
 </div>
 
 ## Now run your code
+Check that a large image appears near the top of each page.
 
 <div class="c-project-output">
 
 ![output screenshot](images/step6.png)
 
 </div>
-
-Run your project and check that a large image appears near the top of each page.

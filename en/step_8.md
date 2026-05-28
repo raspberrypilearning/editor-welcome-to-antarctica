@@ -2,11 +2,9 @@
 
 Use a different grid layout to show wildlife facts in a new way.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
-Open `wildlife.html` and set up the wildlife fact cards.
+In **wildlife.html**, set up the wildlife fact cards.
 
 <div class="c-project-code">
 
@@ -55,9 +53,7 @@ line_highlights: 27-48
 
 ## Step 2
 
-Open `style.css`.
-
-Add the `fact-holder-wildlife` selector.
+In `style.css`, add the `fact-holder-wildlife` code.
 
 <div class="c-project-code">
 
@@ -69,7 +65,6 @@ line_numbers: true
 line_number_start: 108
 line_highlights: 109-114
 ---
-
 /* Fact holder - wildlife */
 .fact-holder-wildlife {
   display: grid;
@@ -77,17 +72,15 @@ line_highlights: 109-114
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 2fr;
 }
-
 --- /code ---
 
 </div>
 
 ## Now run your code
+Check that you can hover over the cards to reveal the facts on the wildlife page.
 
 <div class="c-project-output">
 
 ![output screenshot](images/step9.png)
 
 </div>
-
-Run the Wildlife page and check that you can hover over the cards to reveal the facts.
