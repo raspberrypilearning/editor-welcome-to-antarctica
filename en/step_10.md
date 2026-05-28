@@ -2,11 +2,12 @@
 
 Use JavaScript so the burger menu can show and hide the navigation links.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ## Step 1
 
-Open `responsive-navbar.js` and add click events for opening and closing the menu.
+In the project file tab open **responsive-navbar.js**.
+
+## Step 2
+Add click events for opening and closing the menu.
 
 <div class="c-project-code">
 
@@ -38,9 +39,8 @@ closeHam.addEventListener('click', () => burgerEvent("none", "none", "block"));
 
 </div>
 
-## Step 2
-
-Also add the **JavaScript** file to each page. 
+## Step 3
+Add the **JavaScript** file to the top of each **html** page. The Wildlife page is shown below. You will also need to add this to **index.html** and **climate.html**.
 
 <div class="c-project-code">
 
@@ -56,16 +56,13 @@ line_highlights: 54
     <script type="text/javascript" src="responsive-navbar.js"></script>
   </body>
 </html>
-
 --- /code ---
 
 </div>
 
-## Step 3
+## Step 4
 
-Show the burger menu and stack the links when the screen is small.
-
-Open `style.css` and add a media query to change the navbar layout on small screens.
+In `style.css` and add a media query to change the navbar layout on small screens. This shows the burger menu and stacks the links when the screen is small.
 
 <div class="c-project-code">
 
@@ -108,5 +105,4 @@ line_highlights: 212-236
 </div>
 
 ## Now run your code
-
 Make your browser window narrow, click the burger icon, and check that the links appear and disappear.
