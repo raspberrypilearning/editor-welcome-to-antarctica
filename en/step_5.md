@@ -26,7 +26,7 @@ line_highlights: 91-93
 
 ## Step 2
 
-In **wildlife.html** add the `hero-image` class.
+In **wildlife.html**, add the `hero-image` class.
 
 <div class="c-project-code">
 
