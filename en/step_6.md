@@ -4,9 +4,9 @@ Turn your facts into image cards arranged in a grid.
 
 ## Step 1
 
-In **index.html** update the first `<section>`.
+In **index.html**, update the first `<section>`.
 
-Keep the existing `Welcome to Antarctica!` heading, then add the second heading and the `fact-holder` `<div>` inside the same section.
+Keep the existing `Welcome to Antarctica!` heading. Add the second heading and the `fact-holder` `<div>` inside the same section.
 
 <div class="c-project-code">
 
