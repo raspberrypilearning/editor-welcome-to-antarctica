@@ -1,6 +1,6 @@
 <h2 class="c-project-heading--task">Style the navigation bar</h2>
 
-In `style.css` find the `/* Nav bar */` comment.
+In `style.css`, find the `/* Nav bar */` comment.
 
 Add the styles in the code under each comment.
 
