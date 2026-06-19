@@ -4,7 +4,7 @@ Use JavaScript so the burger menu can show and hide the navigation links.
 
 ## Step 1
 
-In the project file tab open **responsive-navbar.js**.
+In the project file tab, open **responsive-navbar.js**.
 
 ## Step 2
 Add click events for opening and closing the menu.
@@ -62,7 +62,7 @@ line_highlights: 54
 
 ## Step 4
 
-In `style.css` and add a media query to change the navbar layout on small screens. This shows the burger menu and stacks the links when the screen is small.
+In `style.css`, add a media query to change the navbar layout on small screens. This shows the burger menu and stacks the links when the screen is small.
 
 <div class="c-project-code">
 

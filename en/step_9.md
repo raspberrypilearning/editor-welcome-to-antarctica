@@ -1,6 +1,6 @@
 <h2 class="c-project-heading--task">Create a climate grid</h2>
 
-In **climate.html** set up the fact cards with the code below.
+In **climate.html**, set up the fact cards with the code below.
 
 <div class="c-project-code">
 
