@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">Arrange facts with grids</h2>
+## Arrange facts with grids
 
 Turn your facts into image cards arranged in a grid.
 
@@ -8,16 +8,7 @@ In **index.html**, update the first `<section>`.
 
 Keep the existing `Welcome to Antarctica!` heading. Add the second heading and the `fact-holder` `<div>` inside the same section.
 
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: index.html
-line_numbers: true
-line_number_start: 25
-line_highlights: 28-50
----
+```html filename="index.html" line_numbers="true" line_number_start="25" line_highlights="28-50"
     <main>
       <section>
         <h1>Welcome to Antarctica!</h1>
@@ -30,7 +21,7 @@ line_highlights: 28-50
           </span>
           <span class="fact-card discovery">
             <p class="fact">
-              The continent is thought to have been discovered relatively late in human history. In 1820, Fabian Gottlieb von Bellingshausen and Mikhail Lazarev lead a Russian expedition to prove the exsistence of Antarctica and were probably the first to see the ice shelves. 
+              The continent is thought to have been discovered relatively late in human history. In 1820, Fabian Gottlieb von Bellingshausen and Mikhail Lazarev led a Russian expedition to prove the existence of Antarctica and were probably the first to see the ice shelves. 
             </p>
           </span>
           <span class="fact-card explorers">
@@ -46,9 +37,7 @@ line_highlights: 28-50
         </div>
       </section>
     </main>
---- /code ---
-
-</div>
+```
 
 ## Step 2
 
@@ -56,16 +45,7 @@ In `style.css`, find the `/* Fact card */` comment.
 
 Add this code so each fact card fills its grid area and shows its background image properly.
 
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 111
-line_highlights: 112-117
----
+```css filename="style.css" line_numbers="true" line_number_start="111" line_highlights="112-117"
 /* Fact card */
 .fact-card {
   width: 100%;
@@ -73,15 +53,9 @@ line_highlights: 112-117
   background-size: cover;
   background-position: center;
 }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 Check that four fact cards are arranged in a grid.
 
-<div class="c-project-output">
-
 ![output screenshot](images/step7.png)
-
-</div>

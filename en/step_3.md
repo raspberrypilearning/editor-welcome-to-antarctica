@@ -1,24 +1,14 @@
-<h2 class="c-project-heading--task">Style the navigation bar</h2>
+## Style the navigation bar
 
 In `style.css`, find the `/* Nav bar */` comment.
 
 Add the styles in the code under each comment.
 
-> ### Tip
-> 
+> [!TIP]
+>
 > Run your code when you add each bit of code and see how it changes the site.
-{: .c-project-callout .c-project-callout--tip}
 
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 37
-line_highlights: 45, 49-52, 55-59, 62-64, 67-70, 73-79
----
+```css filename="style.css" line_numbers="true" line_number_start="37" line_highlights="45,49-52,55-59,62-64,67-70,73-79"
 /* Nav bar */
 nav {
   padding: 0 15px;
@@ -62,15 +52,9 @@ nav {
   color: var(--burger-colour);
   margin-left: auto;
 }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 Check that the navbar is styled and the current page link looks active.
 
-<div class="c-project-output">
-
 ![output screenshot](images/step4.png)
-
-</div>

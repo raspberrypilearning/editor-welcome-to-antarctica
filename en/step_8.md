@@ -1,4 +1,4 @@
-<h2 class="c-project-heading--task">Create a wildlife grid</h2>
+## Create a wildlife grid
 
 Use a different grid layout to show wildlife facts in a new way.
 
@@ -6,16 +6,7 @@ Use a different grid layout to show wildlife facts in a new way.
 
 In **wildlife.html**, set up the wildlife fact cards.
 
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: wildlife.html
-line_numbers: true
-line_number_start: 24
-line_highlights: 27-48
----
+```html filename="wildlife.html" line_numbers="true" line_number_start="24" line_highlights="27-48"
     <div class="hero-image wildlife"></div>
     <main>
       <section>
@@ -47,24 +38,13 @@ line_highlights: 27-48
       </section>
     </main>
           
---- /code ---
-
-</div>
+```
 
 ## Step 2
 
 In `style.css`, add the `fact-holder-wildlife` code.
 
-<div class="c-project-code">
-
---- code ---
----
-language: css
-filename: style.css
-line_numbers: true
-line_number_start: 108
-line_highlights: 109-114
----
+```css filename="style.css" line_numbers="true" line_number_start="108" line_highlights="109-114"
 /* Fact holder - wildlife */
 .fact-holder-wildlife {
   display: grid;
@@ -72,15 +52,9 @@ line_highlights: 109-114
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 2fr;
 }
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 Check that you can hover over the cards to reveal the facts on the wildlife page.
 
-<div class="c-project-output">
-
 ![output screenshot](images/step9.png)
-
-</div>

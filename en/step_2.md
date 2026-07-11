@@ -1,18 +1,9 @@
-<h2 class="c-project-heading--task">Create a navigation bar</h2>
+## Create a navigation bar
 
 ## Step 1
 Open `index.html` and create a navigation bar so visitors can move between pages.
 
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: index.html
-line_numbers: true
-line_number_start: 11
-line_highlights: 12-21
----
+```html filename="index.html" line_numbers="true" line_number_start="11" line_highlights="12-21"
     <header>
       <nav>
         <div class="nav-items"> 
@@ -26,9 +17,7 @@ line_highlights: 12-21
         </div>
       </nav>
     </header>
---- /code ---
-
-</div>
+```
 
 ## Step 2
 
@@ -41,8 +30,4 @@ Add `class="active"` to the link for the file you are editing.
 ## Now run your code
 Click the navbar links, and check that you can open **Home**, **Wildlife**, and **Climate**.
 
-<div class="c-project-output">
-
 ![output screenshot](images/step3.png)
-
-</div>
