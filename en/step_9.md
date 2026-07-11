@@ -1,17 +1,8 @@
-<h2 class="c-project-heading--task">Create a climate grid</h2>
+## Create a climate grid
 
 In **climate.html**, set up the fact cards with the code below.
 
-<div class="c-project-code">
-
---- code ---
----
-language: html
-filename: climate.html
-line_numbers: true
-line_number_start: 25
-line_highlights: 27-46
----
+```html filename="climate.html" line_numbers="true" line_number_start="25" line_highlights="27-46"
     <main>
       <section>
         <h1>Antarctica's climate</h1>
@@ -45,15 +36,9 @@ line_highlights: 27-46
   </body>
 </html>
     
---- /code ---
-
-</div>
+```
 
 ## Now run your code
 Check that you can hover over the cards to reveal the facts on the Climate page.
 
-<div class="c-project-output">
-
 ![output screenshot](images/step10.png)
-
-</div>
